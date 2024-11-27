@@ -1,0 +1,8 @@
+1-Open terminal
+2-type sudo visudo
+3-scroll down under: # Allow members of group sudo to execute any command
+4-type username  ALL=(ALL) NOPASSWD: path/to/script
+5-type cd
+6-type sudo nano /etc/sudoers.d/username
+7-write down ==> username ALL=NOPASSWD: /path/to/script
+8-sudo chmod 440 /etc/sudoers.d/username
